@@ -1,8 +1,9 @@
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Header from './components/Header'
+import Search from './components/search/Search'
 import Services from './components/Services'
-import './global.css'
+import './globals.css'
 
 const items = [
   {
@@ -23,6 +24,7 @@ const Homepage = () => {
   return (
     <div>
       <Header items={items}/>
+      <Search />
       <Services/>
       <Contact/>
       <Footer />
