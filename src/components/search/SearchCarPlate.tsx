@@ -43,7 +43,7 @@ const SearchCarPlate = () => {
             {/* Category */}
             <section className="flex items-center my-4 gap-2 relative">
                 {CarPlateCategory.slice(0, 1).map((item, index) => (
-                    <div key={index} className="flex items-center justify-center">
+                    <div key={index} className="flex items-center justify-center hover:opacity-75 transition-all cursor-pointer">
                         <img src={BlackCover} className="w-56 h-20 rounded-md" />
                         <div className="font-semibold text-white/90 absolute flex flex-col items-center">
                             <p>{item}</p>
@@ -53,7 +53,7 @@ const SearchCarPlate = () => {
                 ))}
 
                 {CarPlateCategory.slice(1, 4).map((item, index) => (
-                    <div key={index} className="flex items-center justify-center">
+                    <div key={index} className="flex items-center justify-center hover:opacity-75 transition-all cursor-pointer">
                         <img src={PurpleCover} className="w-56 h-20 rounded-md" />
                         <div className="font-semibold text-white/90 absolute flex flex-col items-center">
                             <p>{item}</p>
@@ -63,7 +63,7 @@ const SearchCarPlate = () => {
                 ))}
 
                 {CarPlateCategory.slice(4, 7).map((item, index) => (
-                    <div key={index} className="flex items-center justify-center">
+                    <div key={index} className="flex items-center justify-center hover:opacity-75 transition-all cursor-pointer">
                         <img src={LightPurpleCover} className="w-56 h-20 rounded-md" />
                         <div className="font-semibold text-white/90 absolute flex flex-col items-center">
                             <p>{item}</p>
@@ -76,7 +76,7 @@ const SearchCarPlate = () => {
             {/* Price Range */}
             <section className="flex items-center justify-start w-full gap-2">
                 {Prices.map((price, index) => (
-                    <div key={index} className="bg-[#E5E5FF] text-center rounded-sm w-full ">
+                    <div key={index} className="bg-[#E5E5FF] text-center rounded-sm w-full hover:opacity-75 transition-all cursor-pointer">
                        <p className="sm:text-[8px] py-1 px-2">
                             {price}
                        </p>
@@ -91,7 +91,7 @@ const SearchCarPlate = () => {
                 </Button>
 
                 {States.map((state, index) => (
-                    <div key={index} className="ring-1 ring-slate-300 text-center rounded-full w-full">
+                    <div key={index} className="ring-1 ring-slate-300 text-center rounded-full w-full hover:bg-slate-200 transition-all cursor-pointer">
                        <p className="sm:text-[8px] py-1 px-4 font-semibold">
                             {state}
                        </p>
