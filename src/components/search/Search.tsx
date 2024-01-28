@@ -3,7 +3,7 @@ import SearchCard from './SearchCard'
 
 const Search = () => {
   return (
-    <div>
+    <div id="carPlates" className='bg-gradient-to-b from-gray-50 to-white'>
         <SearchCard />
     </div>
   )

@@ -18,14 +18,14 @@ const Header = ({ items }: HeaderProps) => {
     <div className='relative'>
         <img src={TopCarBg} className='h-fit'/>
 
-        <div className='flex items-center justify-center absolute top-2 w-full gap-32'>
+        <div className='flex items-center justify-center absolute top-2 w-full gap-52'>
             <CompanyLogo />
             <MenuItems items={items}/>
             <SocialIcon />
         </div>
 
         <div>
-            <img src={EmailIcon} className='p-3 bg-purple-700 rounded-full w-16 h-16 ring-1 ring-white absolute top-64 right-60'/>
+            <img src={EmailIcon} className='px-[10px] py-2 bg-[#625EF6] rounded-full w-16 h-16 ring-1 ring-white absolute sm:top-80 sm:right-80 -mx-8'/>
         </div>
     </div>
   )

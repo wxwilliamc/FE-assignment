@@ -52,13 +52,13 @@ const PlateCard = () => {
         setCurrentPage(prevPage => Math.min(prevPage + 1, Math.ceil(plates.length / itemsPerPage)));
     }
 
-    console.log(currentPage)
+    // console.log(currentPage)
 
     return (
         <>
             <div className='grid sm:grid-cols-3 md:grid-cols-4 gap-4 mb-8'>
                 {currentPlates.map((plate, index) => (
-                    <div className='shadow-lg w-full h-[140px] p-[2px] rounded-md pb-2' key={index}>
+                    <div className='shadow-lg w-full h-[140px] p-[2px] rounded-md pb-2 hover:scale-105 transition-all cursor-pointer hover:ring-[#625EF6] hover:ring-2' key={index}>
                         {index === 0 && currentPage === 1 && (
                             <p className='relative'>
                                 <img src={NewBanner} className='absolute w-12 h-4 right-0' />

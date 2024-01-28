@@ -21,21 +21,21 @@ const procedure = [
 ]
 
 const ServiceProcedure = () => {
-  return (
-    <div className='relative w-full gap-12 flex items-center justify-center'>
-        {procedure && procedure.map((items) => (
-            <div key={items.step} className='flex'>
-                <p className='bg-blue-600 ml-8 px-3 py-2 text-2xl rounded-full text-white absolute -top-6'>
-                    {items.step}
-                </p>
-                <img src={items.imageUrl} className='w-[300px] h-[300px]'/>
-                <p className='font-semibold absolute bottom-8 max-w-[180px] ml-[4.5rem]'>
-                    {items.title}
-                </p>
-            </div>
-        ))}
-    </div>
-  )
+    return (
+        <div className='relative w-full gap-16 flex items-center justify-center'>
+            {procedure && procedure.map((items) => (
+                <div key={items.step} className='flex flex-col -mt-8'>
+                    <img src={items.imageUrl} className='w-[260px] h-[260px] drop-shadow-md'/>
+                    <p className='bg-[#625EF6] px-[11px] py-2 text-2xl rounded-full text-white ring-4 ring-slate-200/60 w-12 h-12 absolute -top-16 ml-8 mt-2'>
+                        {items.step}
+                    </p>
+                    <p className='font-bold absolute bottom-10 max-w-[180px] sm:ml-[2.5rem] text-center'>
+                        {items.title}
+                    </p>
+                </div>
+            ))}
+        </div>
+    )
 }
 
 export default ServiceProcedure

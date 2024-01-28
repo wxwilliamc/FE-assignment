@@ -37,7 +37,7 @@ const SearchCarPlate = () => {
             <section className="min-w-[820px] flex items-center gap-2">
                 <Search className="w-5 h-5 ml-4 absolute" />
                 <Input placeholder="Enter your preferred number. Eg: VAC1" className="pl-12 min-w-[680px]" />
-                <Button className="w-full text-xs font-light">Search</Button>
+                <Button className="w-full text-xs font-light bg-[#12243E]">Search</Button>
             </section>
 
             {/* Category */}
