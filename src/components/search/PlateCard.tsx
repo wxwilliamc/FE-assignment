@@ -85,7 +85,7 @@ const PlateCard = () => {
                 {pageNumbers.map((pageNumber, index) => {
                     const isCurrentPage = pageNumber === currentPage;
                     return (
-                        <span key={index} onClick={() => setCurrentPage(pageNumber)}>
+                        <span key={index} onClick={() => setCurrentPage(pageNumber as number)}>
                             <p className={cn('ring-1 ring-slate-200 rounded-full px-4 py-2 mx-2 cursor-pointer transition-all hover:bg-black hover:text-white', isCurrentPage ? 'bg-black text-white' : '')}>
                                 {pageNumber}
                             </p>
